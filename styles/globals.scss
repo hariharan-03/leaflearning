@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 0;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-type: none;
+            padding-bottom: 1rem;
+            img{
+              padding-right:1rem;
+            }
+        }
+    }
+    a{
+        text-decoration: none !important;
+    }
+}
+.f-800{
+    font-weight: 800;
+}
+.f-700{
+    font-weight: 700;
+}
+.f-500{
+    font-weight: 500;
+}
+.f-400{
+    font-weight: 400;
+}
+.f-40{
+    font-size: 40px;
+}
+.f-34{
+    font-size: 34px;
+}
+.f-24{
+    font-size: 24px;
+}
+.f-16{
+    font-size: 16px;
+}
+.f-14{
+    font-size: 14px;
+}
+.green-text{
+    color: #96BB7C !important;
+}
+.orange-text{
+    color: #FFAB71 !important;
+}
+.dead-price-text{
+    color: #BDBDBD !important;
+}
+.blue-text{
+    color: #8EC2F2 !important;
+}
+.mute-text{
+    color: #737373 !important;
+}
+.c-padding{
+    @media screen and (min-width:991px) {
+        padding: 4rem !important;
+    }
+}
+.bg-body-tertiary{
+    background-color: transparent !important;
+}
+.logo{
+    @media screen and (min-width:991px) {
+        padding-left: 1rem;
+        margin-left: 10rem;
+    }
+}
+.about{
+    h2{
+        font-weight: 700;
+        font-size: 58px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    @media screen and (min-width:991px) {
+        &::before{
+            content: "";
+            background-color: #EFF8ED;
+            height:176px;
+            width: 112px;
+            border-bottom-right-radius: 90px;
+            position: absolute;
+            top:0;
+            z-index: -1;
+        }
+        &::after{
+            content: "";
+            background-color: #EFF8ED;
+            height:700px;
+            width: 604px;
+            border-bottom-left-radius: 90px;
+            position: absolute;
+            top:0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+}
+.green-btn {
+    padding: 15px 40px;
+    border: none;
+    background: #96BB7C;
+    border-radius: 5px;
+    color: #ffffff;
+    &.outlined{
+        border: 1px solid#96BB7C;
+        color: #000000;
+        background: none !important;
+    }
+    &.fullradius{
+        border-radius: 30px !important;
+    }
+    @media screen and (max-width:991px) {
+        padding: 12px 30px;
+    }
+}
+.packg{
+    hr{
+        width: 3.125rem;
+        color:#E74040;
+        height: 2px;
+    }
+    .card{
+        &.active{
+            background-color: #96BB7C !important;
+            color: #ffffff;
+            hr{
+                color: #ffffff;
+            }
+        }
+    }
+}
+.courses{
+    background-color: #EFF8ED;
+    @media screen and (min-width:562px) {
+        padding: 1rem !important;
+        .badge {
+            position: absolute !important;
+            top: 1rem !important;
+            left: 1rem !important;
+        }
+        .options {
+            position: absolute !important;
+            top: 20rem !important;
+            left: 4rem !important;
+        }
+    }
+    @media screen and (min-width:991px) {
+        padding: 10rem !important;
+        .options {
+            position: absolute !important;
+            top: 16rem !important;
+            left: 1rem !important;
+        }
+    }
+    .badge{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+}
+.bottom{
+    background-color: #FAFAFA;
+}
+.line-symbol{
+    &::before{
+        content: "";
+        background-color: #E74040;
+        width: 94px;
+        height: 7px;
+        position: relative;
+        left: 3.3rem;
+        bottom: 6rem;
+        margin-bottom: 1rem;
+    }
+}
+.newletter{
+    width: 100%;
+    input{
+        position: relative;
+        height: 50px;
+        border: none;
+        background: #E6E6E6;
+        width: 100%;
+        
+    }
+    button{
+        height:50px;
+        background: #96BB7C;
+        color: #ffffff;
+        border: none;
+        padding: 12px 30px;
+    }
+    @media screen and (min-width:991px) {
+        input{
+            left:-30px;
+        }
+        button{
+            position:absolute;
+            right: 301px;
+        }
+    }
+}
